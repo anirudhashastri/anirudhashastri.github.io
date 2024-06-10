@@ -324,6 +324,13 @@ section {
   color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.experience-time {
+  color: rgb(85, 85, 85);
+  font-weight: 300;
+  font-size: 1.4rem;
   margin-bottom: 2rem;
 }
 
