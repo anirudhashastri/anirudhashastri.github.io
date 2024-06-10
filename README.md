@@ -1,3 +1,3 @@
 # Anirudha Shastri
 
-This is the source code to [Anirudha](https://anirudhashastri.github.io/) personal website.
+This is the source code to [Anirudha's](https://anirudhashastri.github.io/) personal website.
