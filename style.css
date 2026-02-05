@@ -360,6 +360,71 @@ article .icon {
   cursor: default;
 }
 
+/* PUBLICATIONS SECTION */
+
+#publications {
+  position: relative;
+}
+
+.publication-list {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.publication-item {
+  background: white;
+  border: rgb(163, 163, 163) 0.1rem solid;
+  border-radius: 1.5rem;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
+  transition: all 300ms ease;
+}
+
+.publication-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.publication-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.publication-header h3 {
+  color: rgb(53, 53, 53);
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.publication-type {
+  color: rgb(103, 103, 103);
+  font-size: 0.9rem;
+  font-weight: 500;
+  background: rgb(240, 240, 240);
+  padding: 0.3rem 0.8rem;
+  border-radius: 1rem;
+  margin: 0;
+}
+
+.publication-title {
+  color: rgb(85, 85, 85);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0.5rem 0;
+}
+
+.publication-details {
+  color: rgb(120, 120, 120);
+  font-size: 0.9rem;
+  font-style: italic;
+  margin: 0.3rem 0 0 0;
+}
+
 /* PROJECTS SECTION */
 
 #projects {
