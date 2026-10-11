@@ -88,6 +88,16 @@ a {
   place-items: center;
   border-radius: 50%;
 }
+.social a svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+.social a:hover,
+.social a:focus-visible {
+  border-color: var(--rust);
+  color: var(--rust);
+}
 .menu {
   display: none;
   background: none;
