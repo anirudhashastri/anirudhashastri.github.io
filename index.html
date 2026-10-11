@@ -1,480 +1,627 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Medical imaging researcher developing AI for tumor segmentation, image registration, and image-guided intervention. Explore my research, publications, and projects."
+    />
+    <title>Anirudha Shastri — Medical AI Research</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://rudha.dev/" />
+    <meta property="og:title" content="Anirudha Shastri · Medical AI Research" />
+    <meta
+      property="og:description"
+      content="Medical imaging researcher developing AI for tumor segmentation, image registration, and image-guided intervention. Explore my research, publications, and projects."
+    />
+    <meta property="og:image" content="https://rudha.dev/assets/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Anirudha Shastri · Medical AI Research" />
+    <meta
+      name="twitter:description"
+      content="Medical imaging researcher developing AI for tumor segmentation, image registration, and image-guided intervention. Explore my research, publications, and projects."
+    />
+    <meta name="twitter:image" content="https://rudha.dev/assets/og-image.png" />
   </head>
   <body>
-    <nav id="desktop-nav">
-      <div class="logo">Anirudha Shastri</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#publications">Publications</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Anirudha Shastri</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#publications" onclick="toggleMenu()">Publications</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="Anirudha Shastri profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Anirudha Shastri</h1>
-        <p class="section__text__p2">AI and Computer Vision Engineer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/Anirudha-Resume.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="window.open('https://www.linkedin.com/in/anirudhashastri/')"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="window.open('https://github.com/anirudhashastri')"
-          />
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/about-pic.JPG"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>Senior Research Technician<br />Memorial Sloan Kettering Cancer Center</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>M.Sc. Artificial Intelligence<br />B.Tech Computer Science and Engineering</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              I'm a Senior Research Technician at Memorial Sloan Kettering Cancer Center, applying AI to medical imaging—from tumor 
-              segmentation to image registration. My work focuses on diffusion models and computer vision for clinical applications, 
-              with research presented at RSNA and SPIE Medical Imaging. Outside work, I enjoy 3D printing, DIY electronics, and cycling 
-              (miss you Peter Sagan!).
-            </p>
-          </div>  
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Senior Research Technician at Memorial Sloan Kettering Cancer Center</h2>
-            <h3 class="experience-time">January 2025 - Present</h3>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Diffusion Models</h3>
-                  <p>Advanced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>2D & 3D Medical Imaging</h3>
-                  <p>Advanced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>PyTorch</h3>
-                  <p>Advanced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Detectron2</h3>
-                  <p>Advanced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Image Registration</h3>
-                  <p>Advanced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MONAI</h3>
-                  <p>Advanced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Labview</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>3D Slicer</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Computational Drug Discovery Intern at Unravel Bioscience</h2>
-            <h3 class="experience-time">June 2023 - December 2023</h3>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Advanced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>OpenCV</h3>
-                  <p>Advanced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Computer Vision</h3>
-                  <p>Advanced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Tracking Systems</h3>
-                  <p>Advanced</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-        <div class="about-containers" style="margin-top: 2rem;">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Computer Vision Intern at nference</h2>
-            <h3 class="experience-time">February 2022 - April 2022</h3>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Advanced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>OCR</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Digital Pathology</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>OpenCV</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#publications'"
-      />
-    </section>
-    <section id="publications">
-      <p class="section__text__p1">Browse My</p>
-      <h1 class="title">Publications & Presentations</h1>
-      <div class="experience-details-container">
-        <div class="publication-list">
-          <div class="publication-item">
-            <div class="publication-header">
-              <h3>RSNA 2025</h3>
-              <p class="publication-type">Poster Presentation</p>
-            </div>
-            <p class="publication-title">Hip fracture & lesion detection using Detectron2</p>
-          </div>
-          
-          
-          <div class="publication-item">
-            <div class="publication-header">
-              <h3>SPIE Medical Imaging 2025</h3>
-              <p class="publication-type">Poster Presentation & Paper</p>
-            </div>
-            <p class="publication-title">Interactive Lung Tumor Segmentation using Denoising Diffusion Probabilistic Models</p>
-            <div class="btn-container" style="margin-top: 1rem;">
-              <button class="btn btn-color-2 project-btn" onclick="window.open('https://spie.org/medical-imaging/presentation/Interactive-lung-tumor-segmentation-using-denoising-diffusion-probabilistic-models/13927-48')">
-                View Abstract
-              </button>
-            </div>
-          </div>
-          
-          <div class="publication-item">
-            <div class="publication-header">
-              <h3>SPIE Medical Imaging 2025</h3>
-              <p class="publication-type">Poster Presentation & Paper</p>
-            </div>
-            <p class="publication-title">Comparing Bspline and UniGradICON-AI Foundational Deformable Image Registration Methods: Evaluating the Tradeoff Between Accuracy and Speed</p>
-            <div class="btn-container" style="margin-top: 1rem;">
-              <button class="btn btn-color-2 project-btn" onclick="window.open('https://spie.org/medical-imaging/presentation/Comparing-Bspline-and-uniGradICON-AI-foundational-deformable-image-registration-methods/13927-54')">
-                View Abstract
-              </button>
-            </div>
-          </div>
-          
-          <div class="publication-item">
-            <div class="publication-header">
-              <h3>Indian Patent Office</h3>
-              <p class="publication-type">Patent - Published Jan 2025</p>
-            </div>
-            <p class="publication-title">Automated Cervical Vertebral Staging to determine skeletal maturation using Lateral Cephalograms</p>
-            <p class="publication-details">Application No. 202541002362</p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/cvs-staging.png"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Research: Landmark Detection for Bone Age Prediction</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/anirudhashastri/cvs-staging')"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/dental-assistance-tool.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Dental Assistance Tool</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/anirudhashastri/dental-assistance-tool')"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:anirudhashastri99@gmail.com">anirudhashastri99@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/anirudhashastri/" target="_blank">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="nav">
+      <a class="monogram" href="#top">AS</a>
       <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
+        <a href="#research">Research</a><a href="#publications">Publications</a
+        ><a href="#experience">Experience</a><a href="#patent">Patents</a
+        ><a href="#about">About</a
+        ><button
+          type="button"
+          data-pdf="assets/Anirudha_Resume.pdf"
+          data-pdf-title="Anirudha Shastri — Resume"
+        >
+          CV
+        </button>
       </nav>
-      <p>Copyright &#169; 2025 Anirudha Shastri. All Rights Reserved.</p>
+      <div class="nav-tools">
+        <div class="social">
+          <a
+            href="https://scholar.google.com/citations?user=8eGOZwQAAAAJ"
+            target="_blank"
+            >S</a
+          ><a href="https://github.com/anirudhashastri" target="_blank">G</a
+          ><a
+            href="https://www.linkedin.com/in/anirudhashastri/"
+            target="_blank"
+            >in</a
+          >
+        </div>
+        <button
+          class="theme-toggle"
+          type="button"
+          aria-label="Switch to dark theme"
+          aria-pressed="false"
+        >
+          <span class="sun" aria-hidden="true">☼</span
+          ><span class="moon" aria-hidden="true">◐</span></button
+        ><button class="menu" aria-expanded="false">Menu</button>
+      </div>
+    </header>
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="eyebrow">Anirudha Shastri <span>MSK · New York</span></div>
+        <div class="hero-grid">
+          <div>
+            <h1>
+              I build computational methods for
+              <em>seeing, understanding,</em> and intervening in disease.
+            </h1>
+            <p class="lede">
+              Medical imaging researcher and engineer developing methods across
+              segmentation, registration, uncertainty, ablation assessment, and
+              clinically grounded AI.
+            </p>
+            <div class="actions">
+              <a class="button dark" href="#research">View research</a
+              ><button
+                type="button"
+                class="button"
+                data-pdf="assets/Anirudha_Resume.pdf"
+                data-pdf-title="Anirudha Shastri — Resume"
+              >
+                CV ↗</button
+              ><a
+                href="https://scholar.google.com/citations?user=8eGOZwQAAAAJ"
+                target="_blank"
+                >Google Scholar ↗</a
+              >
+            </div>
+          </div>
+          <div class="hero-portrait-composition">
+            <figure class="portrait-card">
+              <img
+                src="assets/anirudha-profile.png"
+                alt="Portrait of Anirudha Shastri"
+              />
+              <figcaption>
+                <b>Anirudha Shastri</b><span>Medical AI researcher</span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="disciplines">
+          <span>Medical AI</span><span>Medical Imaging</span
+          ><span>Image-Guided Intervention</span
+          ><span>Translational Research</span>
+        </div>
+      </section>
+      <section class="research" id="research">
+        <header class="section-head">
+          <span>01 / Selected research</span>
+          <h2>Methods built around the clinical problem.</h2>
+          <p>
+            Investigations across interactive segmentation, deformable
+            registration, and diagnostic imaging.
+          </p>
+        </header>
+        <nav class="research-index" aria-label="Jump to a project">
+          <a href="#project-diffusion"
+            >01 — Interactive Lung Tumor Segmentation</a
+          ><a href="#project-registration"
+            >02 — B-spline vs uniGradICON-AI Registration</a
+          ><a href="#project-radiograph"
+            >03 — Bone Lesion &amp; Fracture Detection</a
+          >
+        </nav>
+        <article class="case" id="project-diffusion">
+          <div class="case-index">01</div>
+          <div class="case-copy">
+            <div class="tags">
+              <span>Diffusion models</span><span>3D segmentation</span
+              ><span>Uncertainty</span>
+            </div>
+            <h3>
+              Interactive Lung Tumor Segmentation using Denoising Diffusion
+              Models
+            </h3>
+            <p>
+              Human-assisted diffusion framework using a single user-defined
+              point, compact 3D ROI processing, and uncertainty-aware
+              predictions.
+            </p>
+            <div class="metrics">
+              <div><strong>0.77</strong><span>3D mean Dice</span></div>
+              <div><strong>20</strong><span>DDIM steps</span></div>
+              <div><strong>49.7×</strong><span>sampling speedup</span></div>
+            </div>
+            <div class="case-actions">
+              <button data-project="diffusion">Explore research</button
+              ><button
+                data-pdf="assets/spie-diffusion-paper.pdf"
+                data-pdf-title="Diffusion segmentation — Paper"
+              >
+                Paper</button
+              ><button
+                data-pdf="assets/spie-diffusion-poster.pdf"
+                data-pdf-title="Diffusion segmentation — Poster"
+              >
+                Poster</button
+              ><a
+                href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13927/139271G/Interactive-lung-tumor-segmentation-using-denoising-diffusion-models/10.1117/12.3088099.short"
+                target="_blank"
+                rel="noopener"
+                >View on SPIE</a
+              >
+            </div>
+          </div>
+          <div class="case-visual diffusion-visual">
+            <div class="visual-head">
+              <div class="micro-label">From interaction to uncertainty</div>
+              <button
+                type="button"
+                class="demo-play"
+                data-pipeline-play
+                aria-pressed="true"
+              >
+                ❚❚ Pause
+              </button>
+            </div>
+            <div class="pipeline" data-pipeline>
+              <button type="button" class="pipeline-step active" data-step="0">
+                User click</button
+              ><b>→</b
+              ><button type="button" class="pipeline-step" data-step="1">
+                ROI crop</button
+              ><b>→</b
+              ><button type="button" class="pipeline-step" data-step="2">
+                DDIM sampling</button
+              ><b>→</b
+              ><button type="button" class="pipeline-step" data-step="3">
+                Ensemble mean</button
+              ><b>→</b
+              ><button type="button" class="pipeline-step" data-step="4">
+                Uncertainty map
+              </button>
+            </div>
+            <div class="step-visual" data-step-visual>
+              <img
+                data-step-img
+                src="assets/Diffusion_user_click.png"
+                alt="Step 1: User click — a single point marked near the tumor center on the CT slice."
+              />
+            </div>
+            <p class="pipeline-detail" data-pipeline-detail aria-live="polite">
+              A clinician places a single point inside the suspected tumor on
+              the CT slice — the only manual input the method needs.
+            </p>
+          </div>
+        </article>
+        <article class="case reverse" id="project-registration">
+          <div class="case-index">02</div>
+          <div class="case-copy">
+            <div class="tags">
+              <span>Deformable registration</span><span>Foundation models</span
+              ><span>Lung ablation</span>
+            </div>
+            <h3>
+              Comparing B-spline and uniGradICON-AI Foundational Registration
+            </h3>
+            <p>
+              Comparison for pre/post lung ablation CT, examining the tradeoff
+              between accuracy and computational speed.
+            </p>
+            <div class="metrics">
+              <div><strong>0.43 mm</strong><span>B-spline TRE</span></div>
+              <div><strong>1.11 mm</strong><span>uniGradICON TRE</span></div>
+              <div><strong>7–10×</strong><span>runtime difference</span></div>
+            </div>
+            <div class="case-actions">
+              <button data-project="registration">Explore research</button
+              ><button
+                data-pdf="assets/spie-registration-paper.pdf"
+                data-pdf-title="Registration — Paper"
+              >
+                Paper</button
+              ><button
+                data-pdf="assets/spie-registration-poster.pdf"
+                data-pdf-title="Registration — Poster"
+              >
+                Poster</button
+              ><a
+                href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13927/139271K/Comparing-B-spline-and-uniGradICON-AI-foundational-deformable-image-registration/10.1117/12.3088146.short"
+                target="_blank"
+                rel="noopener"
+                >View on SPIE</a
+              >
+            </div>
+          </div>
+          <div class="case-visual compare-visual">
+            <div class="visual-head">
+              <div class="micro-label">
+                Drag to compare · Unregistered / Registered
+              </div>
+              <button
+                type="button"
+                class="demo-play"
+                data-compare-play
+                aria-pressed="true"
+              >
+                ❚❚ Pause
+              </button>
+            </div>
+            <div class="compare compare-registration" data-compare>
+              <div class="layer post"></div>
+              <div class="layer pre"></div>
+              <div class="divider"><i></i></div>
+              <input
+                aria-label="Compare scans"
+                type="range"
+                min="5"
+                max="95"
+                value="54"
+              />
+            </div>
+            <div class="compare-label">
+              <span>Unregistered</span><span>Registered</span>
+            </div>
+          </div>
+        </article>
+        <article class="case" id="project-radiograph">
+          <div class="case-index">03</div>
+          <div class="case-copy">
+            <div class="tags">
+              <span>Object detection</span><span>Radiographs</span
+              ><span>Clinical AI</span>
+            </div>
+            <h3>
+              Automated Detection and Characterization of Bone Lesions and
+              Fractures
+            </h3>
+            <p>
+              Deep-learning framework for pelvic radiographs with emphasis on
+              normal-image sampling, difficult cases, and error analysis.
+            </p>
+            <div class="case-actions">
+              <button data-project="radiograph">Explore research</button
+              ><button
+                data-pdf="assets/rsna-radiograph-presentation.pdf"
+                data-pdf-title="Bone lesion detection — Presentation"
+              >
+                Presentation</button
+              >
+            </div>
+          </div>
+          <div class="case-visual compare-visual">
+            <div class="visual-head">
+              <div class="micro-label">
+                Drag to compare · Ground Truth / Predictions
+              </div>
+              <button
+                type="button"
+                class="demo-play"
+                data-compare-play
+                aria-pressed="true"
+              >
+                ❚❚ Pause
+              </button>
+            </div>
+            <div class="compare compare-radiograph" data-compare>
+              <div class="layer post"></div>
+              <div class="layer pre"></div>
+              <div class="divider"><i></i></div>
+              <input
+                aria-label="Compare ground truth and predictions"
+                type="range"
+                min="5"
+                max="95"
+                value="54"
+              />
+            </div>
+            <div class="compare-label">
+              <span>Ground Truth</span><span>Predictions</span>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="publications" id="publications">
+        <header class="section-head">
+          <span>02 / Publications</span>
+          <h2>Selected scholarly work.</h2>
+        </header>
+        <div class="year">2026</div>
+        <div class="pub-list">
+          <article>
+            <div>
+              <span class="badge">First author</span>
+              <h3>
+                Interactive Lung Tumor Segmentation using Denoising Diffusion
+                Models
+              </h3>
+              <p>
+                Anirudha Shastri, Yanjie Wu, Robert Salkin, Arvind Dev, Julia
+                Wolleb, Florentin Bieder, Etay Ziv, Krishna Nand Keshava Murthy
+              </p>
+              <small>SPIE Medical Imaging · 2026</small>
+            </div>
+            <div class="pub-links">
+              <button
+                data-pdf="assets/spie-diffusion-paper.pdf"
+                data-pdf-title="Diffusion segmentation — Manuscript"
+              >
+                Manuscript</button
+              ><button
+                data-pdf="assets/spie-diffusion-poster.pdf"
+                data-pdf-title="Diffusion segmentation — Poster"
+              >
+                Poster</button
+              ><button data-project="diffusion">Project</button
+              ><a
+                href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13927/139271G/Interactive-lung-tumor-segmentation-using-denoising-diffusion-models/10.1117/12.3088099.short"
+                target="_blank"
+                rel="noopener"
+                >DOI</a
+              >
+            </div>
+          </article>
+          <article>
+            <div>
+              <span class="badge">First author</span>
+              <h3>
+                Comparing B-spline and uniGradICON-AI Foundational Deformable
+                Image Registration Methods
+              </h3>
+              <p>
+                Anirudha Shastri, Basar Demir, Robert Salkin, Arvind Dev, Marc
+                Niethammer, Etay Ziv, Krishna Nand Keshava Murthy
+              </p>
+              <small>SPIE Medical Imaging · 2026</small>
+            </div>
+            <div class="pub-links">
+              <button
+                data-pdf="assets/spie-registration-paper.pdf"
+                data-pdf-title="Registration — Manuscript"
+              >
+                Manuscript</button
+              ><button
+                data-pdf="assets/spie-registration-poster.pdf"
+                data-pdf-title="Registration — Poster"
+              >
+                Poster</button
+              ><button data-project="registration">Project</button
+              ><a
+                href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13927/139271K/Comparing-B-spline-and-uniGradICON-AI-foundational-deformable-image-registration/10.1117/12.3088146.short"
+                target="_blank"
+                rel="noopener"
+                >DOI</a
+              >
+            </div>
+          </article>
+          <article>
+            <div>
+              <span class="badge">First author</span>
+              <h3>
+                AI-Based Automated Detection and Characterization of Bone
+                Lesions and Fractures on Pelvic Radiographs
+              </h3>
+              <p>Anirudha Shastri et al.</p>
+              <small>RSNA · 2025</small>
+            </div>
+            <div class="pub-links">
+              <button
+                data-pdf="assets/rsna-radiograph-presentation.pdf"
+                data-pdf-title="Bone lesion detection — Presentation"
+              >
+                Presentation</button
+              ><button data-project="radiograph">Project</button>
+            </div>
+          </article>
+        </div>
+        <h3 class="quiet-title">Co-authored conference contributions</h3>
+        <div class="quiet-pubs">
+          <p>
+            <b
+              >AI-Guided Ablation Assessment Framework for Clinical Workflows
+              Implemented as a 3D Slicer Extension</b
+            ><span>Society of Interventional Oncology · 2026 · Co-author</span>
+          </p>
+          <p>
+            <b
+              >Spatial Analysis of Ablation Margins and Tumor Recurrence in
+              Microwave Lung Ablation</b
+            ><span>Society of Interventional Oncology · 2026 · Co-author</span>
+          </p>
+        </div>
+      </section>
+      <section class="experience" id="experience">
+        <header class="section-head">
+          <span>03 / Experience</span>
+          <h2>Research in translation.</h2>
+        </header>
+        <div class="timeline">
+          <div>2025—Present</div>
+          <div>
+            <h3>Memorial Sloan Kettering Cancer Center</h3>
+            <p class="role">
+              Senior Research Technician · Interventional Radiology · New York
+            </p>
+            <p>
+              Translational AI research across deformable registration,
+              diffusion segmentation, ablation assessment, lesion and fracture
+              detection, medical imaging pipelines, and optical spectroscopy.
+            </p>
+          </div>
+        </div>
+        <div class="timeline muted">
+          <div>Earlier</div>
+          <div>
+            <h3>Healthcare AI & engineering</h3>
+            <p>
+              Applied machine learning and research engineering across clinical
+              data, computer vision, and healthcare workflows.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="patent" id="patent">
+        <div>
+          <span class="kicker">04 / Patent</span>
+          <h2>
+            Automated Cervical Vertebral Staging to determine skeletal
+            maturation using Lateral Cephalograms
+          </h2>
+        </div>
+        <div>
+          <strong>Indian Patent Application No. 202541002362</strong>
+          <p>
+            Computer-vision based cervical vertebral staging using deep-learning
+            methods and landmark localization.
+          </p>
+          <div class="patent-implementation">
+            <img
+              src="assets/cvs-staging.png"
+              alt="True vs. predicted cervical vertebra landmarks on a lateral cephalogram"
+            />
+            <div>
+              <b>Landmark Detection for Bone Age Prediction</b>
+              <span
+                >U-Net and InceptionResNetV2 models implementing the staging
+                method above.</span
+              >
+              <a
+                href="https://github.com/anirudhashastri/cvs-staging"
+                target="_blank"
+                rel="noopener"
+                >GitHub ↗</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <span class="kicker">05 / About</span>
+        <blockquote>
+          “I like problems where computation has to survive contact with
+          reality.”
+        </blockquote>
+        <div>
+          <p>
+            My work sits between machine learning and clinical workflows, where
+            model performance is only part of the problem. Registration error,
+            image geometry, annotation quality, uncertainty, inference time, and
+            clinical usability all matter.
+          </p>
+          <p>
+            Outside the lab, I’m usually exploring tools, cameras, cycling
+            routes, 3D printing, electronic repair or the infrastructure that makes technical work possible.
+          </p>
+        </div>
+        <figure class="about-photo">
+          <img
+            src="assets/anirudha-about.jpg"
+            alt="Anirudha Shastri with his road bicycle"
+          />
+          <figcaption>
+            <span>Beyond the lab</span
+            ><span>Cycling · building · exploring</span>
+          </figcaption>
+        </figure>
+      </section>
+      <section class="side-projects" id="side-projects">
+        <h3 class="quiet-title">Side projects</h3>
+        <div class="quiet-pubs">
+          <a
+            href="https://github.com/anirudhashastri/dental-assistance-tool"
+            target="_blank"
+            rel="noopener"
+          >
+            <img
+              src="assets/dental-assistance-tool.png"
+              alt="Dental Assistance Tool web app interface"
+            />
+            <b>Dental Assistance Tool</b
+            ><span
+              >A web app giving dentists AI-assisted analysis of dental
+              images, built with Node.js and a Flask inference server ·
+              GitHub ↗</span
+            >
+          </a>
+        </div>
+      </section>
+      <a class="lab-teaser" href="#" data-placeholder
+        ><span>Coming later · /lab</span><strong>Experiments / Lab</strong>
+        <p>
+          Interactive demonstrations for registration, uncertainty, ablation
+          margins, and spectroscopy.
+        </p>
+        <b>→</b></a
+      >
+    </main>
+    <footer>
+      <div>
+        <a
+          class="footer-name"
+          href="https://rudha.dev"
+          target="_blank"
+          rel="noopener"
+          ><strong>Anirudha Shastri</strong></a
+        >
+      </div>
+      <div>
+        <a
+          href="https://scholar.google.com/citations?user=8eGOZwQAAAAJ"
+          target="_blank"
+          >Scholar</a
+        ><a href="https://github.com/anirudhashastri" target="_blank"
+          >GitHub</a
+        ><a
+          href="https://www.linkedin.com/in/anirudhashastri/"
+          target="_blank"
+          >LinkedIn</a
+        ><a href="mailto:anirudhashastri99@gmail.com">Email</a
+        ><button
+          type="button"
+          data-pdf="assets/Anirudha_Resume.pdf"
+          data-pdf-title="Anirudha Shastri — Resume"
+        >
+          CV
+        </button>
+      </div>
+      <small>Copyright &#169; 2026 Anirudha Shastri. All Rights Reserved.</small>
     </footer>
+    <dialog id="modal">
+      <button class="close">×</button>
+      <div class="modal-body"></div>
+    </dialog>
+    <div id="toast" role="status">
+      Placeholder — connect the final file or URL later.
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
